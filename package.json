@@ -1,0 +1,22 @@
+{
+  "name": "clientserver",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "server": "nodemon --inspect ./server/server.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.18.2",
+    "fs-extra": "^11.1.0",
+    "http": "^0.0.1-security",
+    "nodemon": "^2.0.21",
+    "path": "^0.12.7",
+    "require": "^2.4.20",
+    "url": "^0.11.0"
+  }
+}

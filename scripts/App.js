@@ -1,27 +1,19 @@
 export default class App {
 
     constructor() {
-        // this is where we build an instance of this app
+
         this.dialogState = false;
 
         this.$editWindow = $("#edit-window");
 
-        // initialize the app itself
         this.initApp();
 
-        // Go get all the prefabs
-        this.fetchPrefabs();
 
-        // Go get the list of levels
         this.fetchLevelList();
 
-        // Handle user selections, new level or load level?
         this.initMenuHandlers();
 
-        // Init level editing handlers (draggables, dialogs, save)
         this.initMenuButtons();
-
-        //this.initDragHandler();
 
         this.initMyDragAndDrop();
 
@@ -34,7 +26,7 @@ export default class App {
 
 
     initMenuHandlers() {
-        // TODO: Init the menu bar click handlers
+        //TODO
     }
 
     initMyDragAndDrop()
@@ -69,14 +61,9 @@ export default class App {
 
     }
 
-    fetchPrefabs() {
-        // TODO: Go to the server and get the list of prefabs
-    }
-
 
     fetchLevelList() {
-        // TODO: Go to the server and get the list of levels
-        // then load the selection list, wait for selection
+        // TODO
         let params = {
             "userid": "test"
         }
@@ -90,20 +77,18 @@ export default class App {
             });
 
 
-        // TODO:  hook up the level select handlers
-
-        // After level selected, load the level
+        // TODO
         this.fetchLevel();
     }
 
 
     fetchLevel() {
-        // TODO: go use teh named level and fetch it from the server
+        // TODO
     }
 
 
     initMenuButtons() {
-        // TODO: Add properties to menu buttons
+        // TODO
 
         const levelButton = $("#save-level");
         levelButton.click( e => {
@@ -120,7 +105,7 @@ export default class App {
 
 
     updateLevelList(data) {
-        // TODO: fill in the level list select options from the data
+        // TODO
         if (data.error)
             return;
 

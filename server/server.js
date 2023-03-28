@@ -79,14 +79,12 @@ class Server {
 
             // TODO: use FileSystem.readdir() to list the file names
 
-
             let result = JSON.stringify( respData );
             response.send( result )
         })
     }
 
-    //TODO: Check functionality of this
-
+    //TODO: Check functionality of this. It counts the files but dont return the value
 
     run() {
 
